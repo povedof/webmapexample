@@ -1,0 +1,12 @@
+<div *ngIf="model">
+    <wm-window [model]="model" id="Form1" class="WindowsFormsApp1_Form1">
+        <ng-template let-model>
+            <div class="Form1">
+                <wm-label #label1 id="label1" [model]="model.label1" class="label1" tabindex="1">Hello World</wm-label>
+                <wm-button #button1 id="button1" [model]="model.button1" class="button1" tabindex="2"></wm-button>
+                <wm-textbox #textBox1 id="textBox1" [model]="model.textBox1" class="textBox1" tabindex="3"></wm-textbox>
+                <wm-label #label2 id="label2" [model]="model.label2" class="label2" tabindex="4"></wm-label>
+            </div>
+        </ng-template>
+    </wm-window>
+</div>
